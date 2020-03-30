@@ -1,0 +1,108 @@
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Cairo', sans-serif;
+}
+
+.calorie-box {
+    width: 55%;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #dcdcdc;
+    padding-bottom: 20px;
+}
+
+.calorie-box .title h3 {
+    background: #ee8572; 
+    padding: 9px; 
+    text-align: center;
+    color: #fff;
+}
+
+.calorie-box .content {
+    padding: 10px;
+}
+
+.calorie-box .content .form-group .radio-container {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.calorie-box .content .form-group input.with-span {
+    display: inline-block;
+    width: 25%;
+}
+
+.calorie-box .content .form-group input.with-span:focus {
+    border: 1px solid #ee8572;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(238, 133, 114, 0.6);
+}
+
+
+.calorie-box .content .form-group span.unit {
+    color: #35495e;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.calorie-box .content .form-group label.fx-label {
+    margin-top: 30px;
+}
+
+.calorie-box .content .form-group #activity {
+    padding-top: 0;
+    width: 50%;
+}
+
+.calorie-box .calorie-control button.show-result {
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+    color: #fff;
+    background: #ee8572cf;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.calorie-box .calorie-control button.show-result:hover {
+    background: #ee8572;
+}
+
+.calorie-box .calorie-result {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.calorie-box .calorie-result .box-result {
+    border: 1px solid #ee8572;
+}
+
+.calorie-box .calorie-result .box-result h4 {
+    background: #ee8572;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+    margin: 0;
+}
+
+.calorie-box .calorie-result .box-result p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.calorie-box .calorie-result .box-result p .bmr-value,
+.calorie-box .calorie-result .box-result p .tdee-value {
+    font-size: 18px;
+}
+
+.calorie-box .calorie-result .box-result p .unit {
+    position: relative;
+    top: -2px;
+    left: -4px;
+    font-size: 12px;
+}
+
+
+
