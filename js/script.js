@@ -68,7 +68,9 @@ let DOM = {
     'calorieResult': '.calorie-result',
     'form': 'form',
     'fat': '#fat',
-    'fxType': '.fx-type'
+    'fxType': '.fx-type',
+    'errorMes': '.error-message',
+    'calorieContent': '.calorie-box .content'
 
 }
 
@@ -131,6 +133,13 @@ let calculation = (e) => {
 
         showResult(calorieObj.bmr, calorieObj.tdee);
 
+    } else {
+        document.querySelector(DOM.errorMes).classList.add('show');
+        document.querySelector(DOM.calorieContent).classList.add('has-error');
+        setTimeout(() => {
+            document.querySelector(DOM.errorMes).classList.remove('show');
+            document.querySelector(DOM.calorieContent).classList.remove('has-error');
+        }, 2000);
     }
 };
 

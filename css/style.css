@@ -5,11 +5,13 @@ body {
 }
 
 .calorie-box {
-    width: 55%;
+    width: 55%; 
     margin: 30px auto;
     background-color: #fff;
     box-shadow: 1px 1px 10px #dcdcdc;
     padding-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .calorie-box .title h3 {
@@ -17,10 +19,21 @@ body {
     padding: 9px; 
     text-align: center;
     color: #fff;
+    margin: 0;
 }
 
 .calorie-box .content {
+    position: relative;
+    top: -50px;
     padding: 10px;
+    -webkit-transition: all .2s ease-in-out ;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.calorie-box .content.has-error {
+    top: 0;
 }
 
 .calorie-box .content .form-group .radio-container {
@@ -104,5 +117,22 @@ body {
     font-size: 12px;
 }
 
+.error-message {
+    margin-top: 10px;
+    position: relative;
+    left: -630px;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    -webkit-transition: left .2s ease-in-out;
+    -moz-transition: left .2s ease-in-out;
+    -o-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
 
+.error-message.show {
+    left: 0;
+}
 
